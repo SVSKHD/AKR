@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+font-family: Montserrat;
+}
+.NAVB{
+background-color: #051937;
+font-family: Montserrat;
+border-radius: 0.2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.NAVBT{
+font-family: Montserrat;
 }
+
+.FOOTB{
+font-family: Pattaya;
+}
+
+/* home */
+.HomeFont{
+font-family: pattaya;
+font-size: 5rem;
+color: #051937;
+}
+
+.HomeFontCommon{
+font-family: pattaya;
+font-size: 5rem;
+color:white;
+}
+
+.HomeFontCommonSUB{
+font-family: Montserrat;
+font-size: 2rem;
+color:white;
+}
+
+.Bottom{
+margin-bottom: 14rem;
+}
+/* 
+footer */
+.SUB{
+color: antiquewhite;
+text-decoration: none;
+}
+
+
+/* __________________________________________
+SIDEBAR___________________________________ */
+
