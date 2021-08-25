@@ -39,7 +39,7 @@ const roleBasedRedirect = (res) => {
       if (res.data.role === "admin") {
         history.push("/admin/dashboard");
       } else {
-        history.push("/user/history");
+        history.push("/user/dashboard");
       }
     }
   };
@@ -78,6 +78,7 @@ const roleBasedRedirect = (res) => {
     }
   };
 
+
   const googleLogin = async () => {
     auth
       .signInWithPopup(googleAuthProvider)
@@ -109,36 +110,36 @@ const roleBasedRedirect = (res) => {
       });
   };
 
-  const FacebookLogin = async () => {
-    auth
-      .signInWithPopup(Facebook)
-      .then(async (result) => {
-        const { user } = result;
-        const idTokenResult = await user.getIdTokenResult();
-        createOrUpdateUser(idTokenResult.token)
-          .then((res) => {
-            dispatch({
-              type: "LOGGED_IN_USER",
-              payload: {
-                name: res.data.name,
-                email: res.data.email,
-                token: idTokenResult.token,
-                role: res.data.role,
-                _id: res.data._id,
-              },
-            });
-            roleBasedRedirect(res);
-          })
-          .catch((err) => console.log(err));
-        // history.push("/");
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error(err.message,{
-          position:"bottom-center"
-        });
-      });
-  };
+  // const FacebookLogin = async () => {
+  //   auth
+  //     .signInWithPopup(Facebook)
+  //     .then(async (result) => {
+  //       const { user } = result;
+  //       const idTokenResult = await user.getIdTokenResult();
+  //       createOrUpdateUser(idTokenResult.token)
+  //         .then((res) => {
+  //           dispatch({
+  //             type: "LOGGED_IN_USER",
+  //             payload: {
+  //               name: res.data.name,
+  //               email: res.data.email,
+  //               token: idTokenResult.token,
+  //               role: res.data.role,
+  //               _id: res.data._id,
+  //             },
+  //           });
+  //           roleBasedRedirect(res);
+  //         })
+  //         .catch((err) => console.log(err));
+  //       // history.push("/");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       toast.error(err.message,{
+  //         position:"bottom-center"
+  //       });
+  //     });
+  // };
 
 
 
@@ -167,6 +168,7 @@ const loginForm = ()=>(
     <Col>
     <Card>
     <CardBody>
+    {loading ?  (<h4 className="CommonLoad">Loading....</h4>) : (<h4 className="CommonR">Login</h4>)}
     <form>
     <input 
             type="email" 

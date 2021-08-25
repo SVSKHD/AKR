@@ -29,7 +29,7 @@ const Footer = () =>{
           </Row>
       </div>
       <hr/>
-      <h4 className="text-center"><b>AquaKart © {date}</b></h4>
+      <h4 className="text-center FOOTBB"><b>AquaKart © {date}</b></h4>
       </CardBody>
       </Card>
       </Container>

@@ -30,7 +30,7 @@ className="col-md-4 badge"
 
 return (
 <div className="container">
-<h3 className="Hometext" >Recently Added Products</h3>
+<h3 className="FOOTBB" >Recently Added Products</h3>
 <hr/>
 <div className="row">
 {loading ? (

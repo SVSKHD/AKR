@@ -21,7 +21,7 @@ return (
 <div className="text-center pt-1 pb-3">
 <span>
 <StarRating
-starDimension="3rem"
+starDimension="1rem"
 starSpacing="3px"
 starRatedColor="#00255d"
 rating={result}

@@ -13,6 +13,11 @@ font-family: Montserrat;
 
 .FOOTB{
 font-family: Pattaya;
+color: aliceblue;
+}
+
+.FOOTBB{
+    color: aliceblue;
 }
 
 /* home */
@@ -20,6 +25,17 @@ font-family: Pattaya;
 font-family: pattaya;
 font-size: 5rem;
 color: #051937;
+}
+
+.HomeText{
+    font-family: pattaya;
+    font-size: 6rem;
+    color: #051937;  
+}
+.Hometext2{
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    color: #051937;
 }
 
 .HomeFontCommon{
@@ -44,7 +60,34 @@ color: antiquewhite;
 text-decoration: none;
 }
 
-
+.Hometext{
+    font-family: Montserrat;
+}
 /* __________________________________________
 SIDEBAR___________________________________ */
+
+/* product */
+.ProductCard{
+    font-family: Montserrat;
+}
+
+.Loaderfont{
+    margin-top: 20rem;
+    font-family: Pattaya;
+    font-size: 8rem;
+}
+
+.Rotate{
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+}
+
+/* cart */
+.CartQuantity{
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-family: Montserrat;  
+}
 

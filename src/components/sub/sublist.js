@@ -30,7 +30,7 @@ key={s._id}>
 
 return (
 <div className="container">
-<h4 className="Hometext" >Related Products</h4>
+<h4 className="FOOTBB" >Related Products</h4>
 <hr/>
 <div className="row">
 {loading ? <h4 className="Category">Loading...</h4> : showSubs()}
