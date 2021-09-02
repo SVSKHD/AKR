@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, ButtonGroup ,CardTitle, CardText, Row, Col, CardBody } from 'reactstrap';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
-import {FaEnvelopeSquare , FaWhatsapp} from "react-icons/fa"
+import {FaEnvelopeSquare , FaWhatsapp , FaFacebookF , FaPinterestP , FaLinkedinIn} from "react-icons/fa"
 
 
 const ProductTabs= ({description}) => {
@@ -64,6 +64,14 @@ const ProductTabs= ({description}) => {
             onClick={() => { toggle('5'); }}
           >
             Contact Us
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '6' })}
+            onClick={() => { toggle('6'); }}
+          >
+            Share
           </NavLink>
         </NavItem>
       </Nav>
@@ -136,6 +144,20 @@ const ProductTabs= ({description}) => {
             <ButtonGroup>
                 <Button outline color="dark"><FaEnvelopeSquare size={40}/></Button>
                 <Button outline color="success"><FaWhatsapp size={40}/></Button>
+            </ButtonGroup>
+            </CardBody>
+         </Card>
+        </TabPane>
+        <TabPane tabId="6">
+        <br/>
+         <Card className="text-center" style={style.Text}>
+            <CardBody>
+            <ButtonGroup>
+                <Button outline color="dark"><FaEnvelopeSquare size={40}/></Button>
+                <Button outline color="success"><FaWhatsapp size={40}/></Button>
+                <Button outline color="primary"><FaFacebookF size={40}/></Button>
+                <Button outline color="danger"><FaPinterestP size={40}/></Button>
+                <Button outline color="primary"><FaLinkedinIn size={40}/></Button>
             </ButtonGroup>
             </CardBody>
          </Card>

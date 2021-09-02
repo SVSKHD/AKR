@@ -84,7 +84,7 @@ const NAVB = (props) => {
             
            
 
-            <UncontrolledDropdown nav inNavbar >
+            {/* <UncontrolledDropdown nav inNavbar >
               <DropdownToggle nav caret>
                 Options
               </DropdownToggle>
@@ -100,7 +100,7 @@ const NAVB = (props) => {
                   Reset
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
             
           </Nav>
           {!user && (

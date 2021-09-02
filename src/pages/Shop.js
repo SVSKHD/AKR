@@ -16,6 +16,7 @@ import { getSubs } from "../components/functions/SubCategory";
 import Default from "../images/Default.png"
 import Layout from "../layout/Layout";
 import { FaRupeeSign } from "react-icons/fa"
+import Seo from "../components/seo";
 
 const { SubMenu, ItemGroup } = Menu;
 const Shop = () =>{
@@ -327,6 +328,12 @@ const Shop = () =>{
 
 return(
     <>
+    <Seo
+    title={`Aquakart Shop with Best Filters ever | Aquakart.Store`}
+    description={`Here you can choose your product with custom filters with your need optimised with wide range of varieties of products are added here with great discounts with immediate delivery.`}
+    keywords={`Aquakart Shop with various products List , Grundfos , Kent , Liquiclear , Ao Smith`}
+    image={`https://aquakart.store/static/media/Default.9c4634fa.png`}
+    />
     <div>
     <Layout>
       <Container fluid>

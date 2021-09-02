@@ -150,7 +150,7 @@ const showAddress = () =>{
 return(
 <>
 <CardBody>
-<h2>Address</h2>
+<h2 className="text-white">Address</h2>
 <hr/>
 <Input
 type="textarea"
@@ -185,7 +185,7 @@ return(
 <>
 <div>
 <CardBody>
-<h2>Phone</h2>
+<h2 className="text-white">Phone</h2>
 <hr/>
 <input
 maxLength={10}
@@ -235,7 +235,7 @@ return(
 <Row>
 
 <Col md={8}>
-<h2>Contact Details</h2>
+<h2 className="text-white">Contact Details</h2>
 <hr/>
 <Row>
 <Col>
@@ -258,7 +258,7 @@ return(
 </Col>
 
 <Col md={4}>
-<h2>Final Price Summary</h2>
+<h2 className="text-white">Final Price Summary</h2>
 <hr/>
 {showProductSummary()}
 <p className="CartQuantity">Cart Total : ₹ {total} </p>

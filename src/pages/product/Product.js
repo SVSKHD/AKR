@@ -113,14 +113,18 @@ console.log(related)
 }
 
 const style={
-backgroundColor:"#051937",
-color:"white",
-fontFamily:"Montserrat",
-Text:{
-fontFamily:"Montserrat",
-color:"black"
-}
-}
+  backgroundColor:"#051937",
+  color:"white",
+  fontFamily:"Montserrat",
+  Text:{
+  fontFamily:"Montserrat",
+  color:"black"
+  },
+  TitleText:{
+      fontFamily:"Montserrat",
+      color:"white"
+      }
+  }
 
 
 return(
@@ -129,7 +133,7 @@ return(
 <Container>
 <Card style={style}>
 <CardBody>
-<h1>{product.title}</h1>
+<h1 style={style.TitleText}>{product.title}</h1>
 <hr/>
 <Row>
 <Col>
@@ -181,7 +185,7 @@ return(
 description={product.description}
 />
 <br/>
-<h3>Related Products</h3>
+<h3 style={style.TitleText}>Related Products</h3>
 <hr/>
 
 <Row>

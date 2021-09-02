@@ -35,9 +35,9 @@ return(
 <ListGroup>
       <ListGroupItem tag={Link} to="/user/orders" >Orders</ListGroupItem>
       <ListGroupItem tag={Link} to="/user/password">Password</ListGroupItem>
-      <ListGroupItem>WishList</ListGroupItem>
-      <ListGroupItem>History</ListGroupItem>
-      <ListGroupItem>Contact Us</ListGroupItem>
+      <ListGroupItem tag={Link} to="/user/wishlist">WishList</ListGroupItem>
+      <ListGroupItem tag={Link} to="/user/history">History</ListGroupItem>
+      <ListGroupItem tag={Link} to="/contact">Contact Us</ListGroupItem>
 </ListGroup>
 </CardBody>
 </Card>

@@ -8,7 +8,7 @@ require("babel-register")({
   function generateSitemap() {
       return (
         new Sitemap(router)
-            .build("https://www.example.com")
+            .build("https://aquakart.store")
             .save("./public/sitemap.xml")
       );
   }

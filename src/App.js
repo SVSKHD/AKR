@@ -51,7 +51,8 @@ const ProductCreate = lazy(()=>import("./pages/Admin/Product/ProductCreate"))
 // user
 const UserDashboard = lazy(()=>import("./pages/User/UserDashboard"))
 const Password = lazy(()=>import("./pages/User/password"))
-
+const WishList = lazy(()=>import("./pages/User/WishList"))
+const UserHistory = lazy(()=>import("./pages/User/History"))
 // cartsidebar
 const SideDrawer = lazy(()=>import("./layout/Drawer"))
 
@@ -147,7 +148,9 @@ function Routing() {
     <AdminRoute exact path="/admin/product" component={ProductCreate}/>
     {/* userRoutes */}
     <UserRoute exact path="/user/dashboard" component={UserDashboard}/>
-    <UserRoute exact path="/user/password" component={password}/>
+    <UserRoute exact path="/user/password" component={Password}/>
+    <UserRoute exact path="/user/wishlist" component={WishList}/>
+    <UserRoute exact path="/user/history" component={UserHistory}/>
     {/* notfound */}
     <Route exact path="*" component={NotFound}/>
     </Switch>
